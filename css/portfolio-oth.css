@@ -1,0 +1,69 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body,html{width: 100%; height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif; background-color: #fafafa;}
+
+.header{width: 100%; height: 90px; background-color: #fff;
+    border-bottom: 1px solid #dbdbdb; box-sizing: border-box;}
+
+.header .header-wrap{ width: 1240px; height: 100%; margin: 0 auto;
+    display: flex; justify-content: space-between; line-height: 90px;}
+
+
+
+.header .left, .header .right{width: 200px; height: 100%;
+    /* background-color: orange; */
+}
+.header .left .logo{width: 100%; height: 100%; font-size: 0; }
+.header .left .logo img{width: 80%; margin-top: 9%;}
+
+
+.header .nav .nav-wrap{ width: 840px; height: 100%;
+    display: flex; justify-content: space-evenly; line-height: 90px; position: relative;
+    /* background-color: #dea;  */
+}
+.header .nav .nav-wrap p a{font-size: 25px; letter-spacing: -0.25px; font-weight: bold;
+}
+
+.header .nav .nav-wrap p:nth-child(3) a{font-weight: bold;}
+.header .nav .nav-wrap p:nth-child(3)::after{ content: ""; position: absolute;
+    width: 140px; height: 2px; background-color: #fbb671; bottom: 0px; left: 600px;
+}
+
+
+.header .right .right-wrap{width: 100%;  height: 100%;
+    display: flex; justify-content: space-evenly; 
+}
+.header .right .right-wrap i{ font-size: 30px; cursor: pointer; line-height: 95px;}
+.header .right i:nth-child(1){color: #fbb671;}
+.header .right i:nth-child(3){
+    background: linear-gradient(135deg, rgba(131,58,180,0.8) 0%, rgba(253,29,29,0.8) 50%, rgba(252,208,69,0.8) 100%);
+    color: transparent; -webkit-background-clip: text;
+}
+
+.color{color: #fd1d1d;}
+
+
+.content{width: 1030px; height: 1200px; margin: 100px auto;
+    padding-top: 200px;
+
+    background: #fafafa; box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff;
+}
+
+.content .content-wrap{ 
+    width: 900px; height: 900px; padding-left: 36px;
+    display: grid; grid-gap: 25px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
+}
+
+.content .content-wrap .content-box{
+    background: #fff; box-shadow: 20px 20px 26px #e9e9e9, -20px -20px 26px #ffffff;
+    box-sizing: border-box;
+
+}
+.content .content-wrap .content-box:nth-child(6){grid-column: 3 / 4; grid-row: 2 / 4;}

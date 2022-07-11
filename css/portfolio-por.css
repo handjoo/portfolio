@@ -1,0 +1,190 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body,html{width: 100%; height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif; background-color: #fafafa;}
+
+
+
+.header{width: 100%; height: 90px; background-color: #fff;
+    border-bottom: 1px solid #dbdbdb; box-sizing: border-box;}
+
+.header .header-wrap{ width: 1240px; height: 100%; margin: 0 auto;
+    display: flex; justify-content: space-between; line-height: 90px;}
+
+
+.header .left, .header .right{width: 200px; height: 100%;
+    /* background-color: orange; */
+}
+.header .left .logo{width: 100%; height: 100%; font-size: 0; }
+.header .left .logo img{width: 80%; margin-top: 9%;}
+
+
+.header .nav .nav-wrap{ width: 840px; height: 100%;
+    display: flex; justify-content: space-evenly; line-height: 90px; position: relative;
+    /* background-color: #dea;  */
+}
+.header .nav .nav-wrap p a{font-size: 25px; letter-spacing: -0.25px; font-weight: bold;}
+
+/* .header .nav .nav-wrap p:nth-child(2) a{font-weight: bold; } */
+.header .nav .nav-wrap p:nth-child(2)::after{
+    content: ""; position: absolute; width: 200px; height: 2px; background-color: #fbb671; bottom: 0px; left: 320px;}
+
+
+.header .right .right-wrap{width: 100%;  height: 100%;
+    display: flex; justify-content: space-evenly; 
+}
+.header .right .right-wrap i{ font-size: 30px; cursor: pointer; line-height: 95px;}
+.header .right i:nth-child(1){color: #fbb671;}
+.header .right i:nth-child(3){
+    background: linear-gradient(135deg, rgba(131,58,180,0.8) 0%, rgba(253,29,29,0.8) 50%, rgba(252,208,69,0.8) 100%);
+    color: transparent; -webkit-background-clip: text;
+}
+
+
+.color{color: #fd1d1d;}
+
+
+
+
+
+.content .top{width: 100%; height: 760px; padding-top: 80px;
+    /* background-color: #dea */
+}
+.content .top .project{width: 945px; height: 754px; margin: 0 auto;
+    /* background-color: #dae; */
+}
+
+.content .top .project>p{font-size: 50px; font-weight: bold; color: #e7e7e7; text-align: center;}
+.content .top .project .mockup{ width: 510px; margin: 0 auto; margin-top: -18px; position: relative;}
+
+.content .top .project .mockup img{width: 100%;}
+
+
+
+
+
+
+.content .top .project .mockup .slick-dots{ bottom: -20px;
+}
+
+.content .top .project .mockup .slick-next{right: 0;}
+
+
+.content .top .project .mockup .slick-prev::before,
+.content .top .project .mockup .slick-next::before{
+    color: #5c5c5c2f; font-size: 40px;
+}
+
+.content .top .project .mockup .slick-prev::before{
+    margin-left: -135px;
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.content .top .project .mockup .slick-next::before{
+    margin-left: 85px;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+/* 슬라이드1 */
+.content .top .project .mockup .mok1::after{content: "";
+    width: 460px; height: 288px; position: absolute; top: 25px; left: 25px;
+    background: url("../images/portfolio/portfolio.png") center top no-repeat; 
+    background-size: cover;
+}
+.content .top .project .mockup .mok1:hover::after{ transition: 10s linear; background-position: center bottom;}
+/* 슬라이드1 */
+
+/* 슬라이드2 */
+.content .top .project .mockup .mok2::after{content: "";
+    width: 460px; height: 288px; position: absolute; top: 25px; left: 25px;
+    background: url("../images/portfolio/dccos.png") center top no-repeat; 
+    background-size: cover;
+}
+.content .top .project .mockup .mok2:hover::after{ transition: 10s linear; background-position: center bottom;}
+/* 슬라이드2 */
+
+
+/* 슬라이드3 */
+
+/* 슬라이드3 */
+
+
+/* 슬라이드4 */
+.content .top .project .mockup .mok4::after{content: "";
+    width: 460px; height: 288px; position: absolute; top: 25px; left: 25px;
+    background: url("../images/portfolio/subway.png") center top no-repeat; 
+    background-size: cover;
+}
+.content .top .project .mockup .mok4:hover::after{ transition: 10s linear; background-position: center bottom;}
+/* 슬라이드4 */
+
+
+
+/* 슬릭 가로길이 다시 확인*/
+
+.slick-list {
+    margin:0 -20px;
+}
+
+.slick-slide {
+    margin:0 20px;
+}
+
+/* .box-content  button.slick-prev.slick-arrow::before,
+.box-content  button.slick-next.slick-arrow::before{display: none;} */
+
+
+
+
+
+.content .top .project .box{width: 650px; height: 400px; margin: 0 auto;}
+.content .top .project .box .box-wrap{width: 100%; height: 400px;}
+
+.content .top .project .box .box-wrap .hashtag{width: 286px; margin: 0 auto; margin-top: 35px;
+    /* display: none; */
+}
+.content .top .project .box .box-wrap .hashtag span:nth-child(2){ margin: 0 15px;}
+
+
+.content .top .project .box .box-content{ margin-top: 14px;
+    width: 100%; height: 130px; border-radius: 35px; line-height: 30px;
+    background-color: #f3f3f3;
+    background: #fafafa; box-shadow:  8px 8px 16px #f3f3f3, -8px -8px 16px #ffffff;
+}
+
+.content .top .project .box .box-content p{margin-left: 34px; height: 90%; width: 93%;}
+.content .top .project .box .box-content p:nth-child(1){padding-top: 15px;}
+/* .content .top .project .box .right-box p{ margin-right: 30px;} */
+
+.content .top .project .btn{ width: 366px; height: 54px; margin: 0 auto; margin-top: 20px; 
+    /* background-color: #ddd; */
+}
+.content .top .project .btn p{float: left; width: 173px; height: 100%; line-height: 54px; border-radius: 35px;
+    background: #fafafa; box-shadow:  8px 8px 16px #f3f3f3, -8px -8px 16px #ffffff; text-align: center;
+    font-weight: bold; font-size: 18px;
+}
+.content .top .project .btn p:nth-child(2){float: right;}
+.content .top .project .btn p a{width: 100%; display: inline-block;}
+
+
+
+.content .bottom{margin-top: 150px; width: 100%; height: 100%;}
+.content .bottom>p{ font-size: 22px; font-weight: bold; color: #e7e7e7; text-align: center; height: 50px; line-height: 50px;}
+
+.content .bottom .bottom-wrap{width: 1030px; height: 750px; margin: 0 auto;  
+    /* background-color: #dea; */
+}
+.content .bottom .bottom-wrap .bottom-box{width: 320px; height: 320px; float: left; border-radius: 35px;
+    background-color: #f9f3eb;}
+.content .bottom .bottom-wrap .bottom-box:not(:nth-child(3n+1)){ margin-left: 35px;}
+.content .bottom .bottom-wrap .bottom-box:not(:nth-child(1n+4)){margin-bottom: 35px;}
+
+
+.content .project .box .slick-arrow{display: none !important;}
